@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sum Numbers</title>
+</head>
+<body>
+    <input type="text" id="pole1"/>  +   
+    <input type="text" id="pole2"/>  =    
+    <input type="text" id="pole3"/>
+    <input type="button" value="calc" onclick="calc()"/>
+    <script>
+        function calc() {
+          let pole1 = Number(document.getElementById("pole1").value);
+          let pole2 = Number(document.getElementById("pole2").value);
+          let total = pole1 + pole2;
+          document.getElementById("pole3").value = total;
+        }
+    </script>
+</body>
